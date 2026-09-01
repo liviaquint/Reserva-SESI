@@ -1,0 +1,129 @@
+/* CORPO DO SITE */
+
+body{
+    text-align: center;
+    background-color: rgb(231, 229, 229);
+}
+
+/* CABEÇALHO DO SITE */
+
+header{
+    background-color: rgb(42, 42, 42);
+    color: #ffff;
+    height: 100px;
+    padding: 20px;
+    box-shadow: 0 6px 1px rgb(255, 1, 1);
+}
+
+header a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 25px;
+    color: #ffff;
+}
+
+img {
+
+}
+
+h3, h2 {
+     font-family: sans-serif;
+     
+}
+
+a{
+     font-family: Arial, sans-serif;
+     text-decoration: none;
+}
+
+/* CARDS DO SITE */
+
+.card {
+    width: 280px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 6px 1px rgb(255, 1, 1);
+    border: 2px solid #ccc;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin: 15px 0 8px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+/* BOTÕES DO SITE */
+
+button {
+    width: 100px;
+    height: 30px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 3px 1px rgb(162, 162, 162);
+    border: 2px solid #ccc;
+
+}
+
+button:hover {
+    background-color: rgb(255, 1, 1);
+    color: #ffff;
+    box-shadow: 0 3px 1px rgb(126, 12, 12);
+    border: 2px solid #3e1414;
+}
+
+.btn-entrar {  
+    padding: 10px 25px; 
+    background-color: rgb(255, 7, 7); 
+    border-radius: 5px; 
+    box-shadow: 0 3px 1px rgb(126, 12, 12);
+    color: #ffff;
+    margin-left: 25px;
+    border: 0px;
+}
+
+.btn-entrar:hover{
+    background-color: #ffff;
+    color: black;
+    box-shadow: 0 3px 1px rgb(116, 114, 114);
+    border: 0px;
+
+}
+
+/* INPUT E LABEL */
+input {
+    width: 300px;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 16px;
+}
+
+label {
+     font-family: Arial, sans-serif;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}

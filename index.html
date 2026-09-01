@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva SESI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+
+    <h1>Reserva SESI</h1>
+    <nav>
+    <a href="#">Início</a>
+    <a href="#espaco">Espaços</a>
+    <a href="#reserva">Reservas</a>
+    <a href="#consultar">Consultar Espaços</a>
+
+    <button class="btn-entrar">Entrar</button>
+    </nav>
+</header>
+    <!-- Para separar o conteúdo  -->
+    <section> 
+    <p>Consulte e reserve os espaços disponíveis do SESI</p>
+    </section>
+
+    <!-- TAG para criar formulários -->
+ 
+    <h2>Solicite uma reserva</h2>
+<form>
+
+    <select id="espaco">
+        <option value="">Selecione um espaço</option>
+        <option value="FAB LAB">Laboratório de Fabricação Digital - FAB LAB</option>
+        <option value="LMT">Laboratório de Matemática - LMT</option>
+        <option value="LCT">Laboratório de Ciências e Tecnologia - LCT</option>
+        <option value="LIE">Laboratório de Informática Educacional - LIE</option>
+    </select>
+
+    <br><br>
+
+    <label>Data</label>
+    <input type="date" id="data">
+
+    <br><br>
+
+    <label>Horário</label>
+    <input type="time" id="horario">
+
+    <br><br>
+
+    <label>Responsável</label>
+    <input type="text" id="responsavel" placeholder="Digite seu nome">
+
+    <br><br>
+
+    <button type="button" onclick="reservar()">Reservar</button>
+
+</form>
+    <h2>Escolha onde reservar</h2>
+
+    <div class="card">
+        <img src="img/fab lab.jpg">
+        <h3>Laboratório de Fabricação Digital - Fab Lab</h3>
+        <li>20 Notebooks</li>
+        <li>8 mesas de trabalhos</li>
+        <li>20 cadeiras</li>
+        <button>Reservar</button>
+    </div>
+<br><br>
+     <div class="card">
+        <img src="img/lmt.jpg">
+        <h3>Laboratório de Matemática - LMT</h3>
+        <li>1 Computador</li>
+        <li>8 mesas de trabalhos</li>
+        <li>24 cadeiras</li>
+        <button>Reservar</button>
+    </div>
+<br><br>
+  <div class="card">
+        <img src="img/lct.jpg">
+        <h3>Laboratório de Ciências e Tecnologia - LCT</h3>
+        <li>20 Notebooks</li>
+        <li>8 mesas de trabalhos</li>
+        <li>20 cadeiras</li>
+        <button>Reservar</button>
+    </div>
+<br><br>
+      <div class="card">
+        <img src="img/lie.jpg">
+        <h3>Laboratório de Informática Educacional - LIE</h3>
+        <li>30 Notebooks</li>
+        <li>15 mesas de trabalhos</li>
+        <li>30 cadeiras</li>
+        <button>Reservar</button>
+    </div>
+<footer>
+  <div>
+    <p>
+      Sistema de reserva de espaços do SESI
+     </p>
+  </div>
+
+</footer>
+<script>
+function reservar() {
+
+    let data = document.getElementById("data").value;
+    let horario = document.getElementById("horario").value;
+    let responsavel = document.getElementById("responsavel").value;
+
+    alert(
+        "Reserva realizada com sucesso!\n\n" +
+        "Data: " + data + "\n" +
+        "Horário: " + horario + "\n" +
+        "Responsável: " + responsavel
+    );
+}
+</script>
+</body>
+</html>
